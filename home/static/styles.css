@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+.wrapper,.header,.main {
+    margin: 0;
+}
+
+.header {
+    background-color: rgba(4, 56, 63, 1);
+}
+
+.main {
+    background-color: #D3EBE7;
+    flex-grow: 1;
+}
+
+#logo,#name {
+    margin: 15px;
+}
+
+#logo {
+    height: 75px;
+    border-radius: 37.5px;
+    vertical-align: middle;
+    margin-left: 80px;
+}
+
+#name {
+    font-size: 45px;
+    vertical-align: -12.5%;
+    margin-left: 10px;
+}
+
+.nav {
+    background-color: rgba(4, 56, 63, 1);
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.bank {
+    margin-left: 25%;
+}
+
+.nav, #name {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    color: #D3EBE7;
+}
+
+a {
+    text-decoration: none;
+}
+
+.description, .elaborate {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    color: rgba(4, 56, 63, 1);
+    text-align: center;
+}
+
+.description {
+    font-size: 72px;
+    width: 75%;
+}
+
+.elaborate {
+    font-size: 32px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    border-color: white;
+    border-width: 50px;
+    margin: 10px;
+}
+
+.people {
+    background-color: rgba(4, 56, 63, 1);
+    padding: 30px;
+    padding-top: 10px;
+    border-radius: 30px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+}
+
+.name, .role {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    color: #D3EBE7;
+    text-align: center;
+    width: 225px;
+}
+
+.name {
+    font-size: 24px;
+}
+
+.role {
+    font-size: 36px;
+}
+
+body {
+    font-family: 'Paytone One', sans-serif;
+    background: url(http://www.shukatsu-note.com/wp-content/uploads/2014/12/computer-564136_1280.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-weight: bold;
+}
+
+.box {
+    margin-top: 30px;
+}
+
+.button {
+    padding: 10px;
+    color: #D3EBE7;
+    border: 2px solid #D3EBE7;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    font-size: 20px;
+}
+
+.button:hover {
+    background: #D3EBE7;
+    color: rgba(4, 56, 63, 1);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #D3EBE7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: rgba(4, 56, 63, 1);
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(4, 56, 63, 1);
+}
+
+.popup .close:hover {
+    color: #D3EBE7;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+    .box{
+        width: 70%;
+    }
+
+    .popup{
+        width: 70%;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.areas {
+    background-color: rgba(4, 56, 63, 1);
+    color: #D3EBE7;
+    margin: 30px;
+    width: 30vw;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.infos {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.mission {
+    font-size: 36px;
+    width: 900px;
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    color: #D3EBE7;
+    text-align: center;
+}

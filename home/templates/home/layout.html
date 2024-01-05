@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../../static/styles.css" rel="stylesheet">
+        <link rel="shortcut icon" href="../../static/connection.jpg" type="image/x-icon">
+        <title>Connection - {% block title %}{% endblock %}</title>
+
+        {% block js %}{% endblock %}
+
+    </head>
+    <body class="wrapper">
+        <h1 class="header">
+            <a href="{% url 'index' %}">
+                <img id="logo" src="../../static/connection.jpg" alt="Connection's logo">
+                <name id="name">CONNECTION</name>
+            </a>
+            <bank class="bank">
+                <a href="{% url 'mission' %}" class="nav">Mission</a>
+                <a href="{% url 'team' %}" class="nav">Team</a>
+                <a href="{% url 'story' %}" class="nav">Story</a>
+                <a href="{% url 'faqs' %}" class="nav">FAQs</a>
+                <a href="{% url 'connect' %}" class="nav">Connect</a>
+            </bank>
+        </h1>
+        <main class="main">
+            {% block main %}{% endblock %}
+        </main>
+    </body>
+</html>
